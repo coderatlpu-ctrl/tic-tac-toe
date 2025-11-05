@@ -1,0 +1,40 @@
+body{
+    background-image: linear-gradient(135deg, #232526, #414345);
+    height: 100vh;
+    color: white;
+    font-family: "Roboto" , sans-serif;
+}
+h1{
+    font-size: 40px;
+}
+.game-container{
+    background-color: transparent;
+    border: solid #414345;
+    border-radius: 12px;
+    margin-top: 60px;
+}
+
+.game-board{
+    display: grid;
+    grid-template-columns: repeat(3,100px);
+    grid-template-rows: repeat(3,100px);
+    gap: 5px;
+}
+
+.each-cell{
+    background-color: #414345;
+    border-radius: 10px;
+    /* Added for centering content */
+    font-size: 3rem; /* Makes the 'X' and 'O' larger */
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.x-sym{
+    color: rgb(3, 237, 3);
+}
+.o-sym{
+    color: rgb(255, 255, 0);
+}
